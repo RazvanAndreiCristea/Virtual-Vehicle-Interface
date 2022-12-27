@@ -11,7 +11,7 @@ class Vehicul
 
 public:
 
-	virtual ~Vehicul();
+	virtual ~Vehicul() = 0;
 
 	virtual float getCamp() const = 0;
 

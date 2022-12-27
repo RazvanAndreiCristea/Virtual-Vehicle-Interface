@@ -48,9 +48,15 @@ int main()
 		if (listaVehicule[j]->tipObiect() == 4)
 			std::cout << *listaVehicule[j];
 
+	std::cout << "Campurile particulare ale fiecarei clase din vectorul neomogen se vor observa mai jos! \n\n";
+
+	for (auto j = 0; j < dimensiune; j++)
+		std::cout << listaVehicule[j]->getCamp() << '\n';
+
+	std::cout << "\n============================================================================================\n\n";
+
 	for (auto j = 0; j < dimensiune; j++)
 		delete listaVehicule[j];
-
 
 	delete[] listaVehicule;
 
